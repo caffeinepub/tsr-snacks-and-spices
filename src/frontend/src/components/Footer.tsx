@@ -22,18 +22,18 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center gap-2 mb-4 group">
-              <div className="w-10 h-10 bg-brand-yellow rounded-md flex items-center justify-center">
-                <span className="font-display font-black text-black text-sm leading-none">
-                  TSR
+            <Link to="/" className="flex items-center gap-3 mb-4 group">
+              <img
+                src="/assets/uploads/file_00000000fae072088d8ed6b747a2e155-1.png"
+                alt="TSR Enterprises"
+                className="h-12 md:h-14 w-auto object-contain"
+              />
+              <div className="flex flex-col leading-tight">
+                <span className="text-brand-yellow font-black text-base md:text-lg tracking-wide uppercase">
+                  TSR Enterprises
                 </span>
-              </div>
-              <div className="flex flex-col leading-none">
-                <span className="font-display font-black text-white text-base">
-                  TSR
-                </span>
-                <span className="text-brand-yellow text-xs font-semibold tracking-wider uppercase">
-                  Snacks & Spices
+                <span className="text-white/70 text-xs md:text-sm font-medium tracking-wider uppercase">
+                  Spices And Snacks
                 </span>
               </div>
             </Link>
@@ -43,24 +43,36 @@ export function Footer() {
             </p>
             {/* Social Icons */}
             <div className="flex gap-3 mt-5">
-              <span
+              <a
+                href="https://www.instagram.com/tsr.enterprises?utm_source=qr&igsh=MW51bHp4ejFhbDRhcA=="
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="w-9 h-9 rounded-md bg-white/5 border border-border flex items-center justify-center text-white/60 cursor-default"
+                className="w-9 h-9 rounded-md bg-white/5 border border-border flex items-center justify-center text-white/60 hover:text-brand-yellow hover:border-brand-yellow transition-colors"
+                data-ocid="footer.instagram.link"
               >
                 <SiInstagram className="w-4 h-4" />
-              </span>
-              <span
+              </a>
+              <a
+                href="https://www.facebook.com/share/19sD48eGnj/"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Facebook"
-                className="w-9 h-9 rounded-md bg-white/5 border border-border flex items-center justify-center text-white/60 cursor-default"
+                className="w-9 h-9 rounded-md bg-white/5 border border-border flex items-center justify-center text-white/60 hover:text-brand-yellow hover:border-brand-yellow transition-colors"
+                data-ocid="footer.facebook.link"
               >
                 <SiFacebook className="w-4 h-4" />
-              </span>
-              <span
+              </a>
+              <a
+                href="https://youtube.com/@tsrenterprises3?si=QpfwnofZ_jTSkEJU"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="YouTube"
-                className="w-9 h-9 rounded-md bg-white/5 border border-border flex items-center justify-center text-white/60 cursor-default"
+                className="w-9 h-9 rounded-md bg-white/5 border border-border flex items-center justify-center text-white/60 hover:text-brand-yellow hover:border-brand-yellow transition-colors"
+                data-ocid="footer.youtube.link"
               >
                 <SiYoutube className="w-4 h-4" />
-              </span>
+              </a>
             </div>
           </div>
 

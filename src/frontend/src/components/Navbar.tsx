@@ -42,7 +42,7 @@ export function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center flex-shrink-0 group gap-2">
             <img
-              src="/assets/uploads/1000468402-Photoroom-1.png"
+              src="/assets/uploads/file_00000000fae072088d8ed6b747a2e155-1.png"
               alt="TSR Enterprises"
               className="h-12 md:h-14 w-auto object-contain"
             />

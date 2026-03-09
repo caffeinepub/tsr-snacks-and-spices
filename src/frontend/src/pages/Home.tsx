@@ -19,24 +19,24 @@ const WHATSAPP_URL =
 
 const WHY_CHOOSE = [
   {
-    icon: Shield,
-    title: "Premium Quality",
-    desc: "Sourced from the finest farms across India",
+    icon: ChefHat,
+    title: "Rajasthani Handcrafted Spices",
+    desc: "Traditional handmade quality in every single pack.",
   },
   {
     icon: Leaf,
-    title: "Fresh Ingredients",
-    desc: "No preservatives, pure taste guaranteed",
-  },
-  {
-    icon: ChefHat,
-    title: "Traditional Recipes",
-    desc: "Authentic Indian flavors crafted with care",
+    title: "All-Natural",
+    desc: "Pure ingredients with no artificial preservatives or colors.",
   },
   {
     icon: Heart,
-    title: "Trusted by Families",
-    desc: "Loved across India for generations",
+    title: "Perfect Healthy Snacks",
+    desc: "Clean, guilt-free munching for your daily cravings.",
+  },
+  {
+    icon: Shield,
+    title: "Freshness Guaranteed",
+    desc: "Processed in hygienic, state-of-the-art facilities and sealed in resealable, moisture-proof zip-lock packs.",
   },
 ];
 
@@ -101,7 +101,7 @@ export function Home() {
             >
               <Sparkles className="w-3.5 h-3.5 text-brand-yellow" />
               <span className="text-brand-yellow text-xs font-bold uppercase tracking-widest">
-                Premium Indian Food
+                Premium Indian Spices And Snacks
               </span>
             </motion.div>
 
@@ -140,7 +140,7 @@ export function Home() {
 
             {/* Trust indicators */}
             <div className="flex flex-wrap gap-4 mt-10">
-              {["100% Natural", "No Preservatives", "Made in India"].map(
+              {["All - Natural", "No Preservatives", "Made in India"].map(
                 (badge) => (
                   <div
                     key={badge}
@@ -322,7 +322,7 @@ export function Home() {
               Why Us
             </p>
             <h2 className="font-display font-black text-3xl md:text-5xl text-white">
-              Why Choose TSR?
+              Why Choose TSR
             </h2>
           </div>
 
