@@ -37,7 +37,7 @@ export function ProductCard({ product, index }: ProductCardProps) {
       className="bg-brand-card border border-border rounded-xl overflow-hidden group product-card-glow transition-all duration-300 hover:-translate-y-1 flex flex-col"
     >
       {/* Product Image */}
-      <div className="relative overflow-hidden aspect-square bg-black/40">
+      <div className="relative overflow-hidden h-44 bg-black/40">
         <img
           src={imageUrl}
           alt={product.name}
@@ -72,7 +72,7 @@ export function ProductCard({ product, index }: ProductCardProps) {
         <h3 className="font-display font-bold text-white text-base leading-tight mb-1.5 line-clamp-2">
           {product.name}
         </h3>
-        <p className="text-white/50 text-sm leading-relaxed flex-1 line-clamp-2 mb-2">
+        <p className="text-white/50 text-sm leading-relaxed line-clamp-2 min-h-[2.5rem] mb-2">
           {product.description}
         </p>
 
@@ -86,7 +86,7 @@ export function ProductCard({ product, index }: ProductCardProps) {
           type="button"
           onClick={handleAddToCart}
           data-ocid={`product.button.${index + 1}`}
-          className="w-full flex items-center justify-center gap-2 py-2.5 px-4 bg-brand-yellow text-black font-bold text-sm rounded-lg hover:bg-brand-yellow/90 transition-all duration-200 hover:shadow-brand-glow-sm active:scale-[0.98] group/btn"
+          className="w-full flex items-center justify-center gap-2 py-2.5 px-4 bg-brand-yellow text-black font-bold text-sm rounded-lg hover:bg-brand-yellow/90 transition-all duration-200 hover:shadow-brand-glow-sm active:scale-[0.98] group/btn mt-auto pt-3"
         >
           <ShoppingCart className="w-4 h-4 transition-transform group-hover/btn:scale-110" />
           <span>Add to Cart</span>
@@ -99,7 +99,7 @@ export function ProductCard({ product, index }: ProductCardProps) {
 export function ProductCardSkeleton() {
   return (
     <div className="bg-brand-card border border-border rounded-xl overflow-hidden animate-pulse">
-      <div className="aspect-square bg-white/5" />
+      <div className="h-44 bg-white/5" />
       <div className="p-4 space-y-3">
         <div className="h-5 bg-white/10 rounded-md w-3/4" />
         <div className="h-3 bg-white/5 rounded-md w-full" />
